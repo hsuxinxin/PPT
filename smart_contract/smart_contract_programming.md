@@ -38,7 +38,7 @@ class: center, middle
 
 * 
 ```python
-if EVENT_X_HAPPED():
+if A_has_more_votes_than_B():
 	send(A, 1000)
 else:
 	send(B, 1000)
@@ -66,7 +66,7 @@ else:
 # Decentralization
 
 * Store and replicate smart contracts on the decentralized ledger and supervised by the network of computers that run the blockchain
-	* remove the need for intermediaries
+	* .blue[remove the need for intermediaries]
 
 * Immutable
 
@@ -129,12 +129,12 @@ class: center, middle
 
 ---
 
-# GAS
+# .blue[Pay] GAS when executing smart contracts
 
 * A unit of work used to measure how computationally expensive an Ethereum operation will be. 
 
 * Gas costs are paid with small amounts of ether.
-	* Gas price * Gas Used
+	* Gas price (User define) * Gas Used
 
 .center[![gas](gas.jpg)]
 
@@ -148,13 +148,13 @@ class: center, middle
 
 # Account
 
-* Externally owned accounts 
+* **Externally owned accounts**
 	* has an ether balance
 	* can send transactions (ether transfer or trigger contract code),
 	* is controlled by private keys,
 	* has no associated code.
 
-* Contract accounts
+* **Contract accounts**
     * has an ether balance
     * has associated code
     * code execution is triggered by transactions or messages (calls) received from other contracts.
@@ -189,10 +189,6 @@ class: center, middle
 
 * Application Binary Interface (ABI)
 	* How you call functions in a contract and get data back
-
----
-
-background-image: url(demo.png)
 
 ---
 
@@ -239,6 +235,10 @@ contract SplunkToken{
 
 ---
 
+background-image: url(demo.png)
+
+---
+
 # Can you trust code ? 
 .center[![hack](hack.png)]
 
@@ -252,6 +252,9 @@ contract SplunkToken{
 		* "0xFeD39690722c039D1a20EfF07e1aE3aB1305Bc81"
 	* value: 2^255
 		* (0x80....0) 63 zeros.
+
+???
+0x8000000000000000000000000000000000000000000000000000000000000000
 
 ---
 
@@ -291,10 +294,6 @@ class: center, middle
 * The Hard-Fork
 	* ETH 
 	* ETC (Ethereum Classic)
-
----
-
-background-image: url(demo2.png)
 
 ---
 
@@ -374,7 +373,7 @@ contract CrowdFundingAttacker{
     }
     
     function withdraw() public returns (bool){
-        if( targetAddress.call(bytes4(sha3("withdraw()"))) == false ) {
+        if( targetAddress.call(bytes4(sha3("deposit()"))) == false ) {
              revert();
         }
         return true;
@@ -382,6 +381,10 @@ contract CrowdFundingAttacker{
    
 }
 ```
+
+???
+attacker: https://ropsten.etherscan.io/address/0xf45960b6a4f97b782698c4a71057bb40fc806307
+https://ropsten.etherscan.io/address/0xae88c088c69b6e1e5bf3d13fdec28ff6644c7792
 
 ---
 
