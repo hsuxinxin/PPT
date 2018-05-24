@@ -163,13 +163,16 @@ class: center, middle
 # Smart Contract Applications
 
 * Initial Coin Offering (ICO)
-	* Smart contracts that collects cryptocurrency from contributors and, after reaching a target amount, distributes newly created tokens to the ICO’s contributors.
-		* ERC-20 protocol
-
+	* Smart contracts that collects cryptocurrency from contributors and distributes newly created tokens to the ICO’s contributors. 
+	.left[![erc20](erc20.png)]
 * Decentralized Applications (DApps)
 	* DApp = frontend + contracts
 		* [CryptoKitties](https://www.cryptokitties.co/)
-		* https://dappradar.com/
+		.left[![kitty](kitty.png)]
+
+		
+???
+https://dappradar.com/
 
 ---
 
@@ -291,7 +294,7 @@ class: center, middle
 
 ---
 
-background-image: url(demo.png)
+background-image: url(demo2.png)
 
 ---
 
