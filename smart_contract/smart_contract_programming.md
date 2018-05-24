@@ -2,7 +2,7 @@ class: center, middle
 
 # Smart Contract Programming on Ethereum
 
-### Jason Xu
+### Jason Xu @ Splunk
 
 ---
 
@@ -51,7 +51,7 @@ else:
 
 ---
 
-# Trust?
+# Trust ?
 
 * .blue.bold[Decentralization!]
 
