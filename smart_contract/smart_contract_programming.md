@@ -92,7 +92,7 @@ distribution makes it impossible for an attacker to force control to release fun
 ---
 
 class: center, middle
-# What is Etherum ?
+# What is Ethereum ?
 
 ---
 
@@ -254,7 +254,13 @@ background-image: url(demo.png)
 		* (0x80....0) 63 zeros.
 
 ???
+["0x8C59b65F1839207261A356d89965561493c43d22","0xFeD39690722c039D1a20EfF07e1aE3aB1305Bc81"]
+0x8C59b65F1839207261A356d89965561493c43d22,0xFeD39690722c039D1a20EfF07e1aE3aB1305Bc81
 0x8000000000000000000000000000000000000000000000000000000000000000
+
+
+https://etherscan.io/address/0xa0872ee815b8dd0f6937386fd77134720d953581#code
+https://etherscan.io/address/0xc5d105e63711398af9bbff092d4b6769c82f793d#code
 
 ---
 
